@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src = "resources/js/jquery-1.11.0.min.js"></script>
+    <script src = "script.js"></script>
+    <title>TASI NZ</title>
+  </head>
+  <body>
+    <header >  
+    <div >
+        <div class="navigateTop">
+          <img class="navigateLogoThin" alt="Alamere Logo" src="/images/air-balloon.png" height="70px">
+          
+         <!-- <div class="logo">
+            <h1>
+              <span class="center">t</span>
+              <span class="center">a</span>
+              <span class="center">s</span>
+              <span class="center">i</span>
+              <span class="center">n</span>
+              <span class="center">z</span>
+            </h1>
+          </div>-->
+          
+          <ul class="navigate">
+            <li id="menuHome">Home</li>
+            <li id="menuLogin">Login</li>
+            <li id="menuMembers">Members</li>
+            <li id="menuBlog">Blog</li>
+            <li id="menuContact">Contact us</li>
+          </ul>
+          <img class="navigateLogo col1left" alt="Tasi Logo" src="/images/air-balloon.png" height="70px">
+        
+        </div>
+      
+      
+    <!-- Clear any floats before the body is drawn -->
+        <div class="clear"></div>	 
+      </div>       
+  </header>
+    <div class="col1left col1right contentPage">
+
+      <!-- LoginPage -->
+      <div id="pageLogin">
+        <form method="post">
+          <div class="imgcontainerlogin">
+            <!--<img src="images/air-balloon.png" alt="Avatar" class="avatar"> -->
+          </div>
+        
+          <div class="containerlogin">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+     
+      <div id="pageMembers">
+       <section class="popular-tours">
+        <h1 class="popular-tours-heading">Committee Members</h1>
+        <div class="cards-wrapper">
+          <div class="card">
+            <div class="front-side">
+              <img src="images/forest.jpg" alt="Forest" class="card-image" />
+              <h1 class="tour-name">Sundeep Dagupati</h1>
+              <ul class="card-list">
+                <li class="card-list-item">President</li>
+                <li class="card-list-item">2019 - Present</li>
+              </ul>
+              
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="images/forest.jpg" alt="Sea" class="card-image" />
+              <h1 class="tour-name">Sujatha Panduri</h1>
+              <ul class="card-list">
+                <li class="card-list-item">Vice President</li>
+                <li class="card-list-item">2019 - Present</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="images/river.jpg" alt="River" class="card-image" />
+              <h1 class="tour-name">Sai Babu Inampudi</h1>
+              <ul class="card-list">
+                <li class="card-list-item">General Seceratory</li>
+                <li class="card-list-item">2019 - Present</li>
+                
+              </ul>
+              
+            </div>
+            
+          </div>
+          
+          <div class="card">
+            <div class="front-side">
+              <img src="images/river.jpg" alt="Forest" class="card-image" />
+              <h1 class="tour-name">Ashok Ambati</h1>
+              <ul class="card-list">
+                <li class="card-list-item">Deputy General Seceratory</li>
+                <li class="card-list-item">2019 - Present</li>
+              </ul>
+            </div>    
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="images/sea.jpg" alt="Forest" class="card-image" />
+              <h1 class="tour-name">Lahiri Sakamuri</h1>
+              <ul class="card-list">
+                <li class="card-list-item">Treasurer</li>
+                <li class="card-list-item">2019 - Present</li>
+              </ul>
+            </div>    
+          </div>
+        </div>
+      </section>
+       </div>
+      <!-- End of Popular tours -->
+
+      <!-- Blogs -->
+      <div id = "pageBlog">
+      
+        <!-- Yet to be implement-->
+      </div>
+      <!-- End of Stories -->
+
+      <!-- Contact -->
+      <div id="pageContact">
+     
+        <h1 class="contact-heading">Contact Us</h1>
+        <form class="contact-form center">
+          <div class="input-group">
+            <label>Full Name *</label>
+            <input
+              type="text"
+              class="contact-input"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="input-groups">
+            <div class="input-group">
+              <label>Email *</label>
+              <input
+                type="email"
+                class="contact-input"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="input-group">
+              <label>Phone</label>
+              <input
+                type="text"
+                class="contact-input"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Message</label>
+            <textarea
+              class="form-textarea"
+              placeholder="Your Message Here..."
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" class="form-btn" />
+        </form>
+      </div>
+      
+        </div>
+       <!-- Clear any floats before the footer is drawn -->
+       <div class="clear"></div>	    
+    </div> 
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-list">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#pageMembers" class="footer-link">Members</a>
+          <a href="#" class="footer-link">About Us</a>
+          <a href="#pageBlogs" class="footer-link">Blogs</a>
+          <a href="#pageContact" class="footer-link">Contact</a>
+        </div>
+        <p class="footer-paragraph">
+          Copyright &copy; ISB softwares.
+          <b></b>
+          All Rights Reserved
+        </p>
+      </footer>
+      <!-- End of Footer -->
+    
+    
+  </body>
+</html>
